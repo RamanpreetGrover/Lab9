@@ -13,3 +13,21 @@ h1 {
     font-size: 250%;
     color: white;
 }
+.filters {
+    text-align: center;
+    margin: 1em 0;
+}
+.filters button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    border-radius: 20px;
+}
+.filters button:hover {
+    background-color: #126882;
+}
