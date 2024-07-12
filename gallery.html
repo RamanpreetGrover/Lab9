@@ -7,10 +7,23 @@
 <body>
     <header>
         <h1>India 2024 T20 Win Gallery</h1>
-        <section class="filters">
-            <button data-category="all">Captain</button>
-            <button data-category="nature">Bowlers</button>
-            <button data-category="city">Batters</button>
-            <button data-category="people">Fielders</button>
-        </section>
     </header>
+    <section id="filters">
+        <button class="filter-button" data-category="Batter">Batter</button>
+        <button class="filter-button" data-category="Bowler">Bowler</button>
+        <button class="filter-button" data-category="Fielder">Fielder</button>
+    </section>
+    <section id="gallery">
+        <div class="image" data-category="Batter"><img src="rishabh.jpg"alt="Batter Image"></div>
+        <div class="image" data-category="Bowler"><img src="bumrah.jpg"alt="Bowler Image"></div>
+        <div class="image" data-category="Fielder"><img src="catch.jpg"alt="Fielder Image"></div>
+        </section>
+
+        <div id="lightbox"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+        
+    

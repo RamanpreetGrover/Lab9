@@ -13,11 +13,11 @@ h1 {
     font-size: 250%;
     color: white;
 }
-.filters {
+#filters {
     text-align: center;
     margin: 1em 0;
 }
-.filters button {
+#filters button {
     background-color: #333;
     color: white;
     border: none;
@@ -28,6 +28,67 @@ h1 {
     font-size: 150%;
     border-radius: 20px;
 }
-.filters button:hover {
+#filters button:hover {
     background-color: #126882;
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* Individual gallery image styling */
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+ /* Responsive image styling for screens wider than 600px */
+ @media (min-width: 600px) {
+    .gallery img {
+        width: calc(33.333% - 1em);
+    }
+}
+/* Responsive image styling for screens narrower than 600px */
+@media (max-width: 599px) {
+    .gallery img {
+        width: calc(50% - 1em);
+    }
+}
+.image {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+}
+/* Lightbox overlay styling */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+/* Lightbox image styling */
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+/* Lightbox close button styling */
+#lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
